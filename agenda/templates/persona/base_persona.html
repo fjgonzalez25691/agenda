@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load  static %}
+
+{% block css %}
+{% endblock css %}
+
+{% block js %}
+<!-- ========== importando vue y axios [ASI ES MALA PRACTICA]========== -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script serc=" https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+
+  
+
+<!-- ==========seccion codigo vuejs========== -->
+<script src="{% static 'apps/search.js' %}"></script>
+<!-- ==========Fin seccion codigo vuejs========== -->
+{% endblock js %}
